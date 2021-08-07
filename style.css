@@ -1,0 +1,222 @@
+/*!
+Theme Name: Kiyono Child
+Author: Benachi
+Theme URI: https://www.benachi.com/kiyono-wordpress-theme/
+Author URI: https://www.benachi.com/
+Description: Kiyono is my 3rd WordPress theme named after my grandmother. Kiyono is a simple blog theme, yet it is equipped with five block patterns and a blank template for those who are experimenting with WordPress’s Latest Full Site Editing.  Kiyono theme is responsive and Gutenberg ready, and it is an accessibility-ready theme. It helps to create inclusive websites and improve the user experience for those who rely on assistive technologies.
+Template: kiyono
+Version: 1.0
+Tested up to: 5.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kiyonochild
+*/
+
+:root {
+  --alignfull-width: 100%;
+  --container-max-width: 1200px;
+  --container-inner-max-width: 1200px;
+  --container-inner-sm-max-width: 840px;
+
+  --color-happy-yellow: #f7cc45;
+  --color-happy-pink: #e695a2;
+  --color-dark-pink: #de5e75;
+  --color-dark-gray: #2e3440;
+  --color-light-gray: #eeeee9;
+  --color-dark-navy:#302655;
+  --color-beige:#f9f5e7;
+  --color-light-green: #a2dad9
+}
+
+body,
+.site a#site-name, 
+.site a#site-name:visited {
+  color: var(--color-dark-navy);
+}
+
+.margin-bottom-none {
+  margin-bottom: 1rem;
+}
+
+header {
+  background-color: #f9f5e7
+}
+
+.letter-space-sm {
+  letter-spacing: -3px;
+}
+
+.site-header {
+  margin-bottom: 0;
+  padding: 2rem 0 0 0;
+}
+
+.site-header .container {
+  padding: 0 !important;
+}
+
+.page-content, .entry-content:not(.blank), .entry-summary {
+  margin: 0 0 0;
+}
+.wp-block-columns.has-background:first-child {
+  padding-top: 2rem;
+}
+
+.wp-block-columns.has-background,
+.wp-block-columns.alignfull{
+  margin-bottom: 0;
+}
+
+.showcase-card .wp-block-columns {
+  justify-content: space-between;
+}
+
+.showcase-card .wp-block-column {
+  max-width: 48%;
+}
+
+.box-shadow {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15));
+  border-radius: 3%;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.img-boarder img {
+  border:1px solid #e5e5e5;
+}
+
+.is-style-rounded:not(.is-circle) img{
+  border-radius: 5% !important;
+}
+
+.showcase-pink-chicken {
+  background-image: url('assets/img/chicken-green.png');
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: bottom right; 
+  background-size: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .showcase-pink-chicken {
+    padding-left: 1rem;
+  }
+}
+
+.bg-about {
+  background-image: url('assets/img/bg-about.png');
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: bottom right; 
+  background-size: auto;
+}
+
+.showcase .wp-block-column p {
+  padding: 0rem 1.25rem;
+}
+
+.showcase .wp-block-column p strong{
+  font-size: 1rem;
+}
+
+.site {
+  background-color: inherit;
+}
+
+.site-header .container {
+  max-width: var(--container-inner-max-width);
+  width: calc(100% - (2 * var(--spacing-horizontal)));
+  padding: 0 var(--spacing-horizontal);
+}
+
+.site a:not(.wp-block-button__link), 
+.site a:not(.wp-block-button__link):visited {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.site a.wp-block-button__link,
+.site a.wp-block-button__link:visited {
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .flex-reverse {
+    flex-direction: column-reverse; 
+  }
+}
+
+.wp-block-button a,
+.wp-block-button a:visited {
+  border-radius: 3px;
+}
+
+/* Footer Area */
+
+footer {
+  padding: 4rem 0 2rem 0;
+}
+
+.footer-bg-color {
+  background-color: var(--color-light-gray);
+}
+
+.footer-widget {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-site-name {
+  font-size: 2.5rem;
+  letter-spacing: -3px;
+  font-weight: bold;
+}
+
+.widget_block p {
+  margin: 0 ;
+  padding: 0;
+}
+
+.widget_block .widget_text p {
+  font-size: 0.8rem;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.inline-style {
+  display: flex;
+  margin-left: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+ul.inline-style li {
+  margin: 0 1.5rem 0 0;
+  list-style-position: inside;
+}
+
+
+.gotoTop {
+  display: flex;
+  text-align: right;
+  width: auto;
+  margin: 0;
+}
+
+.container.footer-credit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: inherit;
+}
+
